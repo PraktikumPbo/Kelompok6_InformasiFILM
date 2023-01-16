@@ -1,0 +1,38 @@
+﻿@model ASPFILM.Models.AddFilmViewModel
+
+@{
+    ViewData["Title"] = "Add Movie Page";
+}
+
+<h2 class="text-center">Add Films</h2>
+
+
+
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Judul Film</label>
+        <input type="text" class="form-control" asp-for="Judul">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Genre Film</label>
+        <input type="text" class="form-control" asp-for="Genre">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Rating Film</label>
+        <input type="text" class="form-control" asp-for="Rating">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Durasi Film</label>
+        <input type="text" class="form-control" asp-for="Durasi">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tanggal Rilis</label>
+        <input type="text" class="form-control" asp-for="Rilis">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Sinopsis Film</label>
+        <input type="text" class="form-control" asp-for="Sinopsis">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

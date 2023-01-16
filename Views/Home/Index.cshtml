@@ -1,0 +1,83 @@
+﻿@model List<ASPFILM.Models.Domain.Film>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/carousel/alice.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/carousel/glory.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/carousel/wednesday.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br />
+
+@*Bootstrap Cards List Movie*@
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/minion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Minions: The Rise of Gru</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/rebornRich.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Reborn Rich</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/alicelagi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Alice In bonderland</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/squid.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Squid Game</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/chainsaw.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chainsaw Man</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/pilim/avatar.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Avatar : The Way of Water</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+

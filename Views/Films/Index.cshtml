@@ -1,0 +1,54 @@
+﻿
+@model List<ASPFILM.Models.Domain.Film> 
+
+@{
+    ViewData["Title"] = "Movie Page";
+}
+
+<h2 class="text-center">Movie List</h2><br /><br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Judul</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Durasi</th>
+            <th>Rilis</th>
+            <th>Sinopsis</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pilem in Model)
+        {
+            <tr>
+                <td>@pilem.Id</td>
+                <td>@pilem.Judul</td>
+                <td>@pilem.Genre</td>
+                <td>@pilem.Rating</td>
+                <td>@pilem.Durasi</td>
+                <td>@pilem.Rilis</td>
+                <td>@pilem.Sinopsis</td>
+                <td><a class="btn btn-primary" href="~/Films/View/@pilem.Id" role="button">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@*<div class="row">
+    @foreach (var pilem in Model) 
+    {
+    <div class="card" style="width: 18rem;">
+        <img src="~/images/pilim/minion.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">@pilem.Judul</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="~/Films" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    }
+</div>*@
+
